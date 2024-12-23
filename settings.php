@@ -17,7 +17,7 @@
             <nav>
                 <ul>
                     <li><a href="index.php">Главная</a></li> 
-                    <li><a href="tasks.php">Задачи</a></li> 
+                    <li><a href="tasks.php">Все задачи</a></li> 
                     <li><a href="settings.php">Настройки</a></li> 
                 </ul>
             </nav>

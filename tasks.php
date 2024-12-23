@@ -3,7 +3,7 @@
     <head> 
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Задачи</title> 
+        <title>Все задачи</title> 
         <link rel="stylesheet" href="style.css"> 
     </head> 
         <body> 
@@ -17,7 +17,7 @@
                         <nav> 
                             <ul> 
                                 <li><a href="index.php">Главная</a></li>
-                                <li><a href="tasks.php">Задачи</a></li> 
+                                <li><a href="tasks.php">Все задачи</a></li> 
                                 <li><a href="settings.php">Настройки</a></li> 
                             </ul> 
                         </nav> 
