@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 800px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+header {
+    background: #007bff;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header button {
+    background: #28a745;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+header button:hover {
+    background: #218838;
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    width: 200px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-right: 1px solid #e0e0e0;
+}
+
+aside nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+aside nav ul li {
+    margin: 10px 0;
+}
+
+aside nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+aside nav ul li a:hover {
+    color: #0056b3;
+}
+
+section {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task {
+    background: #e0e0e0;
+    margin: 5px 0;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.task:hover {
+    background: #d0d0d0;
+    transform: translateY(-2px);
+}
+
+#calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#monthYear {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+#days div {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+button.prev, button.next {
+    background: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button.prev:hover, button.next:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+button.prev:active, button.next:active {
+    transform: scale(0.95);
+}
+
+#settings {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#settings h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#settings label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#settings input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#settings button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#settings button:hover {
+    background-color: #218838;
+}
+button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:focus {
+    outline: none;
+}
+
+button.remove {
+    background-color: #ff4d4d; /* Красный для удаления */
+    color: white;
+}
+
+button.remove:hover {
+    background-color: #ff1a1a; /* Темнее при наведении */
+}
+
+button.move {
+    background-color: #4caf50; /* Зеленый для перемещения */
+    color: white;
+}
+
+button.move:hover {
+    background-color: #45a049; /* Темнее при наведении */
+}
+ 
